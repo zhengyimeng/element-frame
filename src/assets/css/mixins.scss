@@ -1,0 +1,42 @@
+@use "element-plus/theme-chalk/src/common/var.scss";
+
+@mixin width($min, $sm: null, $md: null, $lg: null, $xl: null) {
+  width: $min;
+
+  @if $sm {
+    @media screen and (min-width: var.$sm) {
+      width: $sm;
+    }
+  }
+
+  @if $md {
+    @media screen and (min-width: var.$md) {
+      width: $md;
+    }
+  }
+
+  @if $lg {
+    @media screen and (min-width: var.$lg) {
+      width: $lg;
+    }
+  }
+
+  @if $xl {
+    @media screen and (min-width: var.$xl) {
+      width: $xl;
+    }
+  }
+}
+
+@mixin media($breakpoint) {
+  $b: map-get(var.$breakpoints, $breakpoint);
+  $bs: map-get(var.$breakpoints-spec, $breakpoint);
+
+  @if $b or $bs {
+    @if content-exists() {
+      @media screen and #{if($b, $b, $bs)} {
+        @content;
+      }
+    }
+  }
+}
