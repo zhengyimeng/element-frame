@@ -4,12 +4,8 @@ import routeNames from "./routeNames";
 const routes: RouteRecordRaw[] = [
   {
     path: "/",
-    component: () => import("@/components/HelloWorld.vue"),
-  },
-  {
-    path: "/login",
-    name: routeNames.LOGIN,
-    component: () => import("@/templates/login/Login.vue"),
+    name: routeNames.HOME,
+    component: () => import("@/templates/x/X.vue"),
   },
 ];
 

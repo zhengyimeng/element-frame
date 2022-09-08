@@ -1,5 +1,5 @@
-const LOGIN = Symbol("login");
+const HOME = Symbol("home");
 
 export default {
-  LOGIN,
+  HOME,
 };
