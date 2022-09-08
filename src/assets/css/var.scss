@@ -3,3 +3,8 @@ $my-success: #67c23a;
 $my-warning: #e6a23c;
 $my-error: #f56c6c;
 $my-info: #909399;
+$my-primary-dark: invert($my-primary);
+$my-success-dark: invert($my-success);
+$my-warning-dark: invert($my-warning);
+$my-error-dark: invert($my-error);
+$my-info-dark: invert($my-info);
