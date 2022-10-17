@@ -1,4 +1,5 @@
-@forward "./element.scss";
+@use "./element.scss";
 @forward "./var.scss";
 @forward "./mixins.scss";
 @forward "./extends.scss";
+@forward "element-plus/theme-chalk/src/common/var.scss";
