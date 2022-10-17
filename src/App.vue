@@ -11,3 +11,7 @@ const [, toogleTheme] = useTheme();
     <el-button @click="toogleTheme()">switch theme</el-button>
   </Provider>
 </template>
+
+<style lang="scss">
+@use "@/assets/css/element-dark.scss";
+</style>

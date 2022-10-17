@@ -1,5 +1,6 @@
 @use "./var.scss" as *;
-@forward "element-plus/theme-chalk/src/dark/var.scss" with (
+
+@forward "element-plus/theme-chalk/src/common/var.scss" with (
   $colors: (
     "primary": (
       "base": $my-primary,
@@ -19,11 +20,5 @@
     "info": (
       "base": $my-info,
     ),
-  ),
-  $bg-color: (
-    "page": #0a0a0a,
-    "": yellow,
-    "overlay": #1d1e1f,
   )
 );
-@use "element-plus/theme-chalk/src/dark/css-vars.scss";
